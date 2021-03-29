@@ -101,12 +101,10 @@ while getopts ":w:c:h:v:" opt; do
     h) echo "help file details";;
     w) WARNING=$OPTARG
         process_args $WARNING
-        warn_logic=$?
-        echo $warn_logic;;
+        warn_logic=$?;;
     c) CRITICAL=$OPTARG   
         process_args $CRITICAL
-        crit_logic=$?
-        echo $crit_logic;;
+        crit_logic=$?;;
     v) VAL=$OPTARG
         #Validate input for $VAL
         if [[ !($VAL =~ (^[0-9]+$)) ]]; then
