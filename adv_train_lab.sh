@@ -16,7 +16,7 @@ function process_args(){
   # Matches a threshold range N1:N2 (values inside the range [N1:N2] alert)
   elif [[ $t_arg =~ ^[\@][0-9]+[\:][0-9]+$ ]]; then
      return 3
-  # Matches a threshold range :N (values greater than N alert)
+  # Matches a threshold range :N (values greater than N alert) 
   elif [[ $t_arg =~ ^[~][:][0-9]+$ ]]; then
      return 4
   else
@@ -120,5 +120,10 @@ test_severity 'crit'
 #Test $VAL against $WARNING threshold(s)
 test_severity 'warn'
 
+<<<<<<< HEAD
+#If the script has not exited up to this point, severity is OK
+print_ok
+=======
 #If the script has not exited at this point, severity is OK
 print_ok
+>>>>>>> dd40967750e27e459ad7d253cc0a6b2088515627
