@@ -120,10 +120,9 @@ test_severity 'crit'
 #Test $VAL against $WARNING threshold(s)
 test_severity 'warn'
 
-<<<<<<< HEAD
 #If the script has not exited up to this point, severity is OK
 print_ok
-=======
+
 #If the script has not exited at this point, severity is OK
 print_ok
->>>>>>> dd40967750e27e459ad7d253cc0a6b2088515627
+
