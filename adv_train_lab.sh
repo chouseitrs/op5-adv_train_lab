@@ -122,7 +122,3 @@ test_severity 'warn'
 
 #If the script has not exited up to this point, severity is OK
 print_ok
-
-#If the script has not exited at this point, severity is OK
-print_ok
-
