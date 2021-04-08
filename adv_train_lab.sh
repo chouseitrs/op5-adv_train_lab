@@ -69,6 +69,7 @@ function test_severity(){
     fi
   #Case 1: Critical if $VAL is less than $thresholds
   elif [ $logic -eq 1 ]; then
+    thresholds=$(echo $thresholds | cut -f 1 -d':')
     if [ $VAL -lt $thresholds ]; then
       print_$1
     fi
@@ -88,6 +89,7 @@ function test_severity(){
     fi
   #Case 4: Critical if $VAL is greater than $thresholds
   elif [ $logic -eq 4 ]; then
+    thresholds=$(echo $thresholds | cut -f 2 -d':')
     if [ $VAL -gt $thresholds ]; then
       print_$1
     fi
