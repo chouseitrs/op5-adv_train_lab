@@ -33,7 +33,7 @@ def print_alert(code, message, details):
 ### This function performs the logic check between the value and the thresholds
 def test_severity(data):
 	for sev in range(2,0,-1):
-		val=int(data[0])
+		val=float(data[0])
 		logic=data[sev][0]
 		thresholds=data[sev][1]
 		if logic == 0:
